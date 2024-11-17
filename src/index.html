@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - BPJS Ketenagakerjaan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen flex">
+  <!-- Sidebar -->
+  <aside class="bg-blue-600 text-white w-64 p-4">
+    <h1 class="text-2xl font-bold mb-6">BPJS Dashboard</h1>
+    <nav class="space-y-4">
+      <a href="#" class="block py-2 px-4 rounded hover:bg-blue-700">Dashboard</a>
+      <a href="#" class="block py-2 px-4 rounded hover:bg-blue-700">Arsip Masuk</a>
+      <a href="#" class="block py-2 px-4 rounded hover:bg-blue-700">Arsip Keluar</a>
+      <a href="#" class="block py-2 px-4 rounded hover:bg-blue-700">Pengaturan</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6">
+    <header class="mb-6">
+      <h2 class="text-3xl font-semibold">Selamat Datang</h2>
+      <p class="text-gray-600">Sistem Informasi Pengolahan Data Arsip Jaminan Sosial BPJS Ketenagakerjaan Cabang Purwakarta</p>
+    </header>
+
+    <!-- Cards -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <div class="bg-white shadow-md rounded p-4 text-center">
+        <h3 class="text-xl font-semibold">Total Arsip Masuk</h3>
+        <p class="text-3xl font-bold text-blue-600">120</p>
+      </div>
+      <div class="bg-white shadow-md rounded p-4 text-center">
+        <h3 class="text-xl font-semibold">Total Arsip Keluar</h3>
+        <p class="text-3xl font-bold text-blue-600">80</p>
+      </div>
+      <div class="bg-white shadow-md rounded p-4 text-center">
+        <h3 class="text-xl font-semibold">Pengguna Aktif</h3>
+        <p class="text-3xl font-bold text-blue-600">25</p>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h3 class="text-2xl font-semibold mb-4">Data Arsip Terbaru</h3>
+      <table class="w-full bg-white shadow-md rounded overflow-hidden">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="p-4 text-left">No</th>
+            <th class="p-4 text-left">Nama Arsip</th>
+            <th class="p-4 text-left">Jenis</th>
+            <th class="p-4 text-left">Tanggal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-4">1</td>
+            <td class="p-4">Surat Pengajuan</td>
+            <td class="p-4">Masuk</td>
+            <td class="p-4">2024-11-17</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="p-4">2</td>
+            <td class="p-4">Laporan Keuangan</td>
+            <td class="p-4">Keluar</td>
+            <td class="p-4">2024-11-15</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
